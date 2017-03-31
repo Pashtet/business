@@ -1,6 +1,7 @@
 @font-face {
     font-family: Nevis; /* Имя шрифта */
     src: url(/fonts/nevis.ttf); /* Путь к файлу со шрифтом */
+    font-size: 10px;
 
    }
 
@@ -159,7 +160,6 @@ letter-spacing: -2px;
 /* BEGIN MIDDLE */
 
 .middle-block{
-
   background: #fff;
   padding: 40px 0 50px 40px;
 }
@@ -174,7 +174,7 @@ letter-spacing: -2px;
   margin-right: 0px;
 }
 
-.middle-block h2{
+h2.title, .middle-block h2{
   font-size: 25px;
   color: #585858;
   margin-bottom: 24px;
@@ -188,11 +188,11 @@ letter-spacing: -2px;
   font-family: Nevis;
   text-transform: uppercase;
   color:#6c6c6c;
-  padding: 8px 17px 8px 10px;
+  padding: 4px 10px 4px 10px;
   border-radius: 3px;
   border: 1px solid #ccc;
   background-image:linear-gradient(to top, #e5e5e5, #fefefe);
-   display: inline-block;
+  display: inline-block;
 }
 .read-more:hover{
   background-image:linear-gradient(to top, #fefefe, #e5e5e5);
@@ -316,11 +316,150 @@ footer{
 
 /* END FOOTER */
 
+/* SERVICES */
+.fl-right{
+  float: right;
+  display: inline-block;
+}
+
+.top-gradient{
+  background: url(/img/bg-top-grad.gif) repeat-x 0 0 #fff;
+}
+
+.benefits{
+  padding: 25px 0 10px 41px;
+  
+}
+
+.benefits h2.title{
+  margin-top: 0;
+}
+
+.benefits li{
+  margin: 0 70px 40px 0;
+  padding-left: 45px;
+  width: 340px;
+  background: url(/img/check.gif) no-repeat 0 50%;
+  float:left;
+}
+
+.benefits li: nth-child(even){
+  margin-right: 0;
+}
+/* CLEARFIX */
+
+.page-block:after,
+.benefits:after{
+  content:'';
+  display: table;
+  clear:both;
+}
+/* SERVICES END */
+
+/* ABOUT */
+.main-block{
+  background: url(/img/bg-main-block.gif) repeat-y 700px 0 #fff;
+  padding-bottom: 70px;
+}
+
+main{
+  width: 631px;
+  float: left;
+  margin-left: 41px;
+}
+main p{
+  margin-top: 40px;
+  line-height: 24px;
+
+}
+
+.side-bar{
+  float:right;
+  width: 219px;
+  margin-right: 41px;
+}
+
+.sb-block h3.title{
+  font-size: 15px;
+  font-weight: bold;
+  color:#000;
+  background-image: linear-gradient(to right,#cfcfcf,#fff);
+  margin: 30px 0 30px -21px;
+  padding-left: 21px;
+}
+.sb-block{
+  margin-left: 21px;
+}
+/* ABOUT END */
+
+
+
+/* ABOUT SERVICES PORTFOLIO PAGE BLOCK */
+.page-block{
+  background: url(/img/bg-about.png) no-repeat 0 0;
+  padding: 20px 41px;
+  color:#fff;
+  font-size: 20px;
+  
+}
+.page-block p{
+  float:right;
+  font-style: italic;
+  line-height: 40px;
+}
+.page-block h1{
+  font-size: 25px;
+}
+
+.page-block ul{
+  float:right;
+}
+
+.page-block li{
+  float:left;
+  margin-right: 30px;
+}
+
+.page-block li:last-child{
+  margin-right: 0;
+}
+
+.page-block li a{
+  color:#93daff;
+  font-size: 13px;
+}
+
+.page-block li a.current{
+  color: #fff;
+}
+
+
+/* END PAGE BLOCK */
+
+/* PORTFOLIO */
+
+.portfolio .middle-block p{
+  margin-top: 0;
+}
+
+.portfolio .middle-block h4{
+  margin-top: 30px;
+
+}
+
+/* .margin-p-portfolio p{
+  float: left;
+  margin-top: 0;
+} */
+
+/* PORTFOLIO END */
 /* CLEARFIX */
 
 .blurbs:after,
 .middle-block:after,
-.top-footer:after{
+.top-footer:after,
+.page-block:after,
+.main-block:after{
   content:'';
   display: table;
   clear:both;
